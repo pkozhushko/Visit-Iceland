@@ -1,0 +1,170 @@
+@font-face {
+  font-family: dinn;
+  src: url(../font/DINNextLTPro-MediumCond.otf);
+}
+@font-face {
+  font-family: raleway-sb;
+  src: url(../font/Raleway-SemiBold.ttf);
+}
+
+
+/***************************************** 		Navigation-menu 	*********************************************/
+.logo {
+	margin-right: 10px;
+}
+nav {
+	padding: 0;
+}
+a, a:hover {
+	color: black;
+}
+.navbar {
+	background-color: white !important;
+}
+.nav-link, .navbar-brand {
+	text-transform: uppercase;
+	color: black !important;
+	opacity: 0.8;
+	font-family: dinn;	
+}
+.navbar-brand {
+	font-size: 1.5rem;
+}
+.navbar-nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.nav-link {
+	font-size: 1.2rem;	
+}
+.lang-icon, .search-icon {
+	color: #a4a4a4 !important;
+}
+.nav-link:hover {
+	color: #a4a4a4 !important;
+}
+.search-icon:hover, .lang-icon:hover {
+	color: black !important;
+}
+
+@media (min-width: 992px) {	
+		.dropdown-menu {
+		left: -76px;
+		top: 139%;
+	}
+}
+
+/***************************************** 		Container-title 	*********************************************/
+
+.container-title {
+	position: relative;
+	padding: 0;
+}
+.title-background-img {
+	width: 100%;
+}
+.wraper-img {
+	position: absolute;
+	top: 0;
+	margin-left: 50%;
+	width: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.wraper-second {
+	margin-left: 70%;
+}
+.bg-1 {
+	background-image: url(../img/bg1.jpg);
+	background-size: auto 100%;
+}
+.bg-2 {
+	background-image: url(../img/bg-2.jpeg);
+	background-size: auto 100%;
+}
+.header-icon {
+	font: 1.4rem raleway-sb;
+	color: black;
+	margin-bottom: 3rem;
+}
+.icon {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;	
+	font-size: 2.5rem;	
+	color: black;
+	border-radius: 50%;	
+	background-color: rgba(5, 5, 5, 0.3);	
+}
+
+@media (max-width: 992px) {	
+	.icon { font-size: 2rem; }
+	.header-icon {	font-size: 1.2rem; }
+}
+@media (max-width: 600px) {	
+	.icon { font-size: 1.5rem;	}
+	.header-icon {	font-size: 1rem; }
+}
+@media (max-width: 400px) {	
+	.icon { font-size: 1rem; }
+	.header-icon {	font-size: 0.8rem; }
+}
+
+
+/***************************************** 		"Things to do" block	 	*********************************************/
+.wraper-stuff {
+	background-image: url(../img/stuff.jpg);
+	background-size: auto 100%;	
+}
+.container-stuff {	
+	background: rgba(255,255,255,0.7);
+}
+.container-stuff-title {
+	text-align: center;
+	text-transform: uppercase;
+	font: 2rem dinn;	
+}
+
+.card {
+	margin: 0 !important;
+	height: 100%;
+}
+.card-img {	
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.card-title {
+	text-align: center;
+	margin-top: 0.5rem;
+	font: 1.5rem raleway-sb;
+}
+.card-text {	
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+  	white-space: nowrap; 
+}
+.btn-view, .btn-buy {
+	bottom: 0;
+	border: 1px solid;	
+	background-color: white !important;
+	padding: 5px 30px !important;
+	margin: 10px 0 10px 3px !important;
+}
+.btn-view, .btn-view:hover, .btn-view:active, .btn-view:focus {
+	border-color: rgb(123, 130, 224) !important;
+	color: rgb(45, 54, 171);
+}
+.btn-buy, .btn-buy:hover, .btn-buy:active, .btn-buy:focus {
+	border-color: #21582d !important;
+	color: #023305;
+}
+.btn-view:hover, .btn-buy:hover {
+	background-color: #ebf1ea !important; 
+}
